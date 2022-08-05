@@ -38,6 +38,8 @@ ENV TRANSMISSION_WEB_HOME=/opt/transmission-web-control \
 VOLUME [ "/etc/Jackett" ]
 
 
+EXPOSE 9117
+
 COPY /start.sh /
 
 CMD /start.sh
