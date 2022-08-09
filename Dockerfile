@@ -27,9 +27,7 @@ RUN apk add libgcc libstdc++
 
 
 # Environment variables
-ENV TRANSMISSION_WEB_HOME=/opt/transmission-web-control \
-    TRANSMISSION_HOME=/etc/transmission \
-    XDG_CONFIG_HOME=/etc \
+ENV XDG_CONFIG_HOME=/etc \
     PUID=99 \
     PGID=100 
 
