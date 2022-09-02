@@ -25,16 +25,13 @@ RUN apk add bash
 COPY --from=dotnet /out /usr/bin/jackett
 RUN apk add libgcc libstdc++
 
-
 # Environment variables
 ENV XDG_CONFIG_HOME=/etc \
     PUID=99 \
     PGID=100 
 
-
 # Add volumes for persistent data
 VOLUME [ "/etc/Jackett" ]
-
 
 EXPOSE 9117
 
